@@ -1,0 +1,46 @@
+managed implementation in class ZBP_R_HEAT_DTL_USR unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_HEAT_DTL_USR alias ZrHeatDtlUsr
+persistent table ZDT_HEAT_DTL_USR
+extensible
+draft table ZHEAT_DTL_USR_D
+etag master Lastchangedat
+lock master total etag Lastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   User1;
+
+  field ( readonly )
+   Createdat,
+   Createdby,
+   Lastchangedby,
+   Lastchangedat;
+
+  field ( readonly : update )
+   User1;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZDT_HEAT_DTL_USR corresponding extensible
+  {
+    User1 = USER1;
+    Plant1 = PLANT1;
+    Createdat = CREATEDAT;
+    Createdby = CREATEDBY;
+    Lastchangedby = LASTCHANGEDBY;
+    Lastchangedat = LASTCHANGEDAT;
+  }
+
+}

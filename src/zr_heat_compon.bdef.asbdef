@@ -1,0 +1,50 @@
+managed implementation in class ZBP_R_HEAT_COMPON unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_HEAT_COMPON alias ZrHeatCompon
+persistent table ZDT_HEAT_COMPON
+extensible
+draft table ZHEAT_COMPON_D
+etag master Lastchangedat
+lock master total etag Lastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   Product1,
+   Plant1;
+
+  field ( readonly )
+   Createdat,
+   Createdby,
+   Lastchangedby,
+   Lastchangedat;
+
+  field ( readonly : update )
+   Product1,
+   Plant1;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZDT_HEAT_COMPON corresponding extensible
+  {
+    Product1 = PRODUCT1;
+    Plant1 = PLANT1;
+    Createdat = CREATEDAT;
+    Createdby = CREATEDBY;
+    Lastchangedby = LASTCHANGEDBY;
+    Lastchangedat = LASTCHANGEDAT;
+    Prodname1 = PRODNAME1;
+    Units1 = UNITS1;
+  }
+
+}

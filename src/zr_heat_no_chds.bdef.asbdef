@@ -1,0 +1,53 @@
+managed implementation in class ZBP_R_HEAT_NO_CHDS unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_HEAT_NO_CHDS alias ZrHeatNoChds
+persistent table ZDT_HEAT_NO_CHDS
+extensible
+draft table ZHEAT_NO_CHDS_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( readonly )
+   UUID,
+   Cuuid,
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( numbering : managed )
+   UUID,
+   Cuuid;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZDT_HEAT_NO_CHDS corresponding extensible
+  {
+    UUID = UUID;
+    Cuuid = CUUID;
+    Serialno1 = SERIALNO1;
+    Chargemixcomponent1 = CHARGEMIXCOMPONENT1;
+    Cmixcompdesc1 = CMIXCOMPDESC1;
+    Componentqty1 = COMPONENTQTY1;
+    Componentunit1 = COMPONENTUNIT1;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}

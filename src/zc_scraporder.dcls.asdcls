@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_SCRAPORDER'
+@MappingRole: true
+define role ZC_SCRAPORDER {
+  grant select on ZC_SCRAPORDER
+  where INHERITING CONDITIONS FROM ENTITY ZR_SCRAPORDER REPLACING { ROOT WITH _BaseEntity };
+}

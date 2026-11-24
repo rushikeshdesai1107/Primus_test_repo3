@@ -1,0 +1,291 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'UUID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'UUID'
+annotate view ZC_HEAT_NO_DTLS with
+{
+  @EndUserText.label: 'UUID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  },
+  {
+      id            : 'childd',
+      type          : #LINEITEM_REFERENCE,
+      label         : 'Baccha',
+      position      : 20,
+      targetElement : '_childd'
+    } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  UUID;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Plant1;
+  
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Createdat;
+  
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Createdby;
+  
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Lastchangedby;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Lastchangedat;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Locallastchangedat;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Productionorderno1;
+  
+  @EndUserText.label: 'Date1'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Date1'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'Date1'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  Date1;
+  
+  @EndUserText.label: 'Material1'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Material1'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Material1'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  Material1;
+  
+  @EndUserText.label: 'Materialdesc1'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Materialdesc1'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Materialdesc1'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  Materialdesc1;
+  
+  @EndUserText.label: 'Heatqty1'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Heatqty1'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Heatqty1'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  Heatqty1;
+  
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  Units1;
+  
+  @EndUserText.label: 'Noofheat1'
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'Noofheat1'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'Noofheat1'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  Noofheat1;
+  
+  @EndUserText.label: 'Heatno1'
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'Heatno1'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'Heatno1'
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  Heatno1;
+  
+  @EndUserText.label: 'User1'
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'User1'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 , 
+    label: 'User1'
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  User1;
+  
+  @EndUserText.label: 'Time1'
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'Time1'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: 'Time1'
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  Time1;
+  
+  @EndUserText.label: 'Serialno1'
+  @UI.identification: [ {
+    position: 180 , 
+    label: 'Serialno1'
+  } ]
+  @UI.lineItem: [ {
+    position: 180 , 
+    label: 'Serialno1'
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  Serialno1;
+  
+  @EndUserText.label: 'Heatunitconsumption1'
+  @UI.identification: [ {
+    position: 190 , 
+    label: 'Heatunitconsumption1'
+  } ]
+  @UI.lineItem: [ {
+    position: 190 , 
+    label: 'Heatunitconsumption1'
+  } ]
+  @UI.selectionField: [ {
+    position: 190 
+  } ]
+  Heatunitconsumption1;
+  
+  @EndUserText.label: 'Shift1'
+  @UI.identification: [ {
+    position: 200 , 
+    label: 'Shift1'
+  } ]
+  @UI.lineItem: [ {
+    position: 200 , 
+    label: 'Shift1'
+  } ]
+  @UI.selectionField: [ {
+    position: 200 
+  } ]
+  Shift1;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 210 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 210 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 210 
+  } ]
+  _BaseEntity;
+}

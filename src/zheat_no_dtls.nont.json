@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZHEAT_NO_DTLS",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZHEAT_NO_DTLS",
+  "sapObjectType": "ZHEAT_NO_DTLS",
+  "rootNode": true
+}

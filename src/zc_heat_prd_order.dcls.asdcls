@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_HEAT_PRD_ORDER'
+@MappingRole: true
+define role ZC_HEAT_PRD_ORDER {
+  grant select on ZC_HEAT_PRD_ORDER
+  where INHERITING CONDITIONS FROM ENTITY ZI_HEAT_PRD_ORDER REPLACING { ROOT WITH _BaseEntity };
+}

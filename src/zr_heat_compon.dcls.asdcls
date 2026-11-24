@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_HEAT_COMPON'
+@MappingRole: true
+define role ZR_HEAT_COMPON {
+  grant select on ZR_HEAT_COMPON
+  where TRUE;
+}

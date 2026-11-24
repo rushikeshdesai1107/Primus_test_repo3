@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_HEAT_COMPON'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_HEAT_COMPON'
+  }
+}
+define service ZUI_HEAT_COMPON_O4 provider contracts odata_v4_ui {
+  expose ZC_HEAT_COMPON;
+}

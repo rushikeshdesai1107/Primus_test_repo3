@@ -1,0 +1,293 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Plant'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Plant'
+annotate view ZC_SCRAPORDER with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Plant;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  OrderNo;
+  
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Component;
+  
+  @EndUserText.label: 'SapDescription'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'SapDescription'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'SapDescription'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  SapDescription;
+  
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Date1;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Material;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  HeaderMaterialDesc;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  OrderType;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  TotalWeightInKg;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  Item;
+  
+  @EndUserText.label: 'ComponentDescription'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'ComponentDescription'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'ComponentDescription'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  ComponentDescription;
+  
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  ComponentQuantity;
+  
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  StorageLocation;
+  
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.lineItem: [ {
+    position: 140 
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  Weight;
+  
+  @UI.identification: [ {
+    position: 150 
+  } ]
+  @UI.lineItem: [ {
+    position: 150 
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  TotalWeight;
+  
+  @EndUserText.label: 'Remark'
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'Remark'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 , 
+    label: 'Remark'
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  Remark;
+  
+  @EndUserText.label: 'OrderConfirmed'
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'OrderConfirmed'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: 'OrderConfirmed'
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  OrderConfirmed;
+  
+  @UI.identification: [ {
+    position: 180 
+  } ]
+  @UI.lineItem: [ {
+    position: 180 
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  Createdat;
+  
+  @UI.identification: [ {
+    position: 190 
+  } ]
+  @UI.lineItem: [ {
+    position: 190 
+  } ]
+  @UI.selectionField: [ {
+    position: 190 
+  } ]
+  Createdby;
+  
+  @UI.identification: [ {
+    position: 200 
+  } ]
+  @UI.lineItem: [ {
+    position: 200 
+  } ]
+  @UI.selectionField: [ {
+    position: 200 
+  } ]
+  Lastchangedby;
+  
+  @UI.identification: [ {
+    position: 210 
+  } ]
+  @UI.lineItem: [ {
+    position: 210 
+  } ]
+  @UI.selectionField: [ {
+    position: 210 
+  } ]
+  Lastchangedat;
+  
+  @UI.identification: [ {
+    position: 220 
+  } ]
+  @UI.lineItem: [ {
+    position: 220 
+  } ]
+  @UI.selectionField: [ {
+    position: 220 
+  } ]
+  AvailableStock;
+  
+  @UI.identification: [ {
+    position: 230 
+  } ]
+  @UI.lineItem: [ {
+    position: 230 
+  } ]
+  @UI.selectionField: [ {
+    position: 230 
+  } ]
+  Batch;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 240 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 240 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 240 
+  } ]
+  _BaseEntity;
+}

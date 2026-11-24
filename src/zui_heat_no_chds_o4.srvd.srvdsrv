@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_HEAT_NO_CHDS'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_HEAT_NO_CHDS'
+  }
+}
+define service ZUI_HEAT_NO_CHDS_O4 provider contracts odata_v4_ui {
+  expose ZC_HEAT_NO_CHDS;
+}

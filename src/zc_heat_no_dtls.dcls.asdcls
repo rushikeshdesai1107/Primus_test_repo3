@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_HEAT_NO_DTLS'
+@MappingRole: true
+define role ZC_HEAT_NO_DTLS {
+  grant select on ZC_HEAT_NO_DTLS
+  where INHERITING CONDITIONS FROM ENTITY ZR_HEAT_NO_DTLS REPLACING { ROOT WITH _BaseEntity };
+}

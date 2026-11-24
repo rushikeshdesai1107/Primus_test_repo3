@@ -1,0 +1,102 @@
+managed implementation in class ZBP_R_HEAT_NO_DTLS unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_HEAT_NO_DTLS alias ZrHeatNoDtls
+persistent table ZDT_HEAT_NO_DTLS
+extensible
+draft table ZHAT_NO_DTLS_D
+etag master Lastchangedat
+lock master total etag Locallastchangedat
+authorization master( global )
+{
+  field ( readonly )
+   UUID,
+   Createdat,
+   Createdby,
+   Lastchangedby,
+   Lastchangedat,
+   Locallastchangedat;
+
+  field ( numbering : managed )
+   UUID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+association _childd { create; with draft; }
+  mapping for ZDT_HEAT_NO_DTLS corresponding extensible
+  {
+    UUID = UUID;
+    Plant1 = PLANT1;
+    Createdat = CREATEDAT;
+    Createdby = CREATEDBY;
+    Lastchangedby = LASTCHANGEDBY;
+    Lastchangedat = LASTCHANGEDAT;
+    Locallastchangedat = LOCALLASTCHANGEDAT;
+    Productionorderno1 = PRODUCTIONORDERNO1;
+    Date1 = DATE1;
+    Material1 = MATERIAL1;
+    Materialdesc1 = MATERIALDESC1;
+    Heatqty1 = HEATQTY1;
+    Units1 = UNITS1;
+    Noofheat1 = NOOFHEAT1;
+    Heatno1 = HEATNO1;
+    User1 = USER1;
+    Time1 = TIME1;
+    Serialno1 = SERIALNO1;
+    Heatunitconsumption1 = HEATUNITCONSUMPTION1;
+    Shift1 = SHIFT1;
+  }
+  }
+  define behavior for ZR_HEAT_NO_CHDS alias ZRHEATNOCHDS
+persistent table zdt_heat_no_chds
+draft table ZHEAT_NO_CHDS_D
+lock dependent by _head
+authorization dependent by _Head
+{
+  field ( readonly )
+   uuid,
+   Cuuid,
+   Createdby,
+   Createdat,
+   Lastchangedby,
+   Lastchangedat,
+   Locallastchangedat;
+
+  field ( numbering : managed )
+//   Versionuuid,
+   Cuuid;
+
+  update;
+  delete;
+
+//  draft action Activate optimized;
+//  draft action Discard;
+//  draft action Edit;
+//  draft action Resume;
+//  draft determine action Prepare;
+  association _Head { with draft; }
+  mapping for ZHEAT_NO_CHDS_D
+  {
+    uuid = UUID;
+    Cuuid = CUUID;
+    serialno1  = SerialNo1;
+      chargemixcomponent1  = ChargeMixComponent1;
+      cmixcompdesc1        = CMixCompDesc1;
+      componentqty1        = ComponentQty1;
+    Createdby = CREATEDBY;
+    Createdat = CREATEDAT;
+    Lastchangedby = LASTCHANGEDBY;
+    Lastchangedat = LASTCHANGEDAT;
+    Locallastchangedat = LOCALLASTCHANGEDAT;
+  }
+
+}

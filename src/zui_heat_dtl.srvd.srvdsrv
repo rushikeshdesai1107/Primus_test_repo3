@@ -1,0 +1,11 @@
+@EndUserText.label: 'Service Definition for Heat no Details'
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_HEAT_NO_DTLS'
+  }
+}
+define service ZUI_HEAT_DTL
+  provider contracts odata_v4_ui {
+  expose ZC_HEAT_NO_DTLS;
+  expose ZC_HEAT_NO_CHDS;
+}

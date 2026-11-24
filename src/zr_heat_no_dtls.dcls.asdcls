@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_HEAT_NO_DTLS'
+@MappingRole: true
+define role ZR_HEAT_NO_DTLS {
+  grant select on ZR_HEAT_NO_DTLS
+  where TRUE;
+}

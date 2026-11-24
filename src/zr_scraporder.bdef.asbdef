@@ -1,0 +1,66 @@
+managed implementation in class ZBP_R_SCRAPORDER unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_SCRAPORDER alias ZrScraporder
+persistent table ZDT_SCRAPORDER
+extensible
+draft table ZDTSCRAPORDER_D
+etag master Lastchangedat
+lock master total etag Lastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   Plant,
+   OrderNo;
+
+  field ( readonly )
+   Createdat,
+   Createdby,
+   Lastchangedby,
+   Lastchangedat;
+
+  field ( readonly : update )
+   Plant,
+   OrderNo;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZDT_SCRAPORDER corresponding extensible
+  {
+    Plant = PLANT;
+    OrderNo = ORDER_NO;
+    Component = COMPONENT;
+    SapDescription = SAP_DESCRIPTION;
+    Date1 = DATE1;
+    Material = MATERIAL;
+    HeaderMaterialDesc = HEADER_MATERIAL_DESC;
+    OrderType = ORDER_TYPE;
+    BaseUnit = BASE_UNIT;
+    TotalWeightInKg = TOTAL_WEIGHT_IN_KG;
+    Item = ITEM;
+    ComponentDescription = COMPONENT_DESCRIPTION;
+    ComponentQuantity = COMPONENT_QUANTITY;
+    StorageLocation = STORAGE_LOCATION;
+    Weight = WEIGHT;
+    TotalWeight = TOTAL_WEIGHT;
+    Remark = REMARK;
+    OrderConfirmed = ORDER_CONFIRMED;
+    Createdat = CREATEDAT;
+    Createdby = CREATEDBY;
+    Lastchangedby = LASTCHANGEDBY;
+    Lastchangedat = LASTCHANGEDAT;
+    AvailableStock = AVAILABLE_STOCK;
+    Batch = BATCH;
+  }
+
+}
